@@ -107,3 +107,9 @@ img {
     width: 80px;
     height: 300px;
 }
+.texto{
+    margin-left: 100px;
+}
+h1{
+    font-family: 'Creepster', cursive;
+}
