@@ -1,3 +1,77 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f3f0;
+    color: #222;
+}
+
+/* Navegación fija */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #f0a500;
+}
+
+/* Espacio para el contenido debajo del nav */
+.content {
+    margin-top: 90px;
+    padding: 20px;
+}
+
+/* Secciones con imagen y texto */
+.seccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.seccion .texto {
+    width: 60%;
+}
+
+.seccion .imagen {
+    width: 40%;
+}
+
+.seccion .imagen img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Pie de página */
+/*footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+} */
 footer {
     font-size: 18px;
   background-color: #000;
