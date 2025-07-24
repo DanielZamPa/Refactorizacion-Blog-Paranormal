@@ -1,0 +1,30 @@
+footer {
+    font-size: 18px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Creepster', cursive;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 2px solid crimson;
+}
+
+.footer-section {
+  margin: 10px;
+  text-align: center;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 5px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
