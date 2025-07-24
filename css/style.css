@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +5,7 @@
 }
 
 body {
+    
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f5f3f0;
@@ -17,7 +17,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #111;
+    background-color: #000000;
     padding: 15px 0;
     text-align: center;
     z-index: 1000;
@@ -35,13 +35,11 @@ nav a:hover {
     color: #f0a500;
 }
 
-/* Espacio para el contenido debajo del nav */
 .content {
     margin-top: 90px;
     padding: 20px;
 }
 
-/* Secciones con imagen y texto */
 .seccion {
     display: flex;
     align-items: center;
@@ -64,7 +62,7 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* Pie de página */
+
 /*footer {
     background-color: #111;
     color: white;
@@ -101,4 +99,11 @@ footer {
 
 footer p {
   margin: 5px 0;
+}
+h2{
+ font-family: 'Creepster', cursive;}
+ 
+img {
+    width: 80px;
+    height: 300px;
 }
