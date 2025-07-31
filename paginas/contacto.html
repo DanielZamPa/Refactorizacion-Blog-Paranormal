@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puertas al Misterio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="./about.html">Quiénes somos</a>
-        <a href="../paginas/contacto.html">Contacto</a>
-    </nav>
-    <h1 >Te invitamos a abrir las Puertas del misterio</h1>
-        <h1 id="hola">Llena el siguiente formulario y pronto de brindaremos la llave mágica que te permitirá ingresar</h1>
+
+  <nav>
+    <a href="../index.html">Inicio</a>
+    <a href="./about.html">Quiénes somos</a>
+    <a href="../paginas/contacto.html">Contacto</a>
+  </nav>
+
+  <div class="content">
+    <h1>Te invitamos a abrir las Puertas del misterio</h1>
+    <h1 id="hola">Llena el siguiente formulario y pronto te brindaremos la llave mágica que te permitirá ingresar</h1>
 
     <form id="form-contacto">
-        
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+      <label for="telefono">Celular o Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
 
-        <label for="telefono">Celular o Teléfono:</label><br>
-        <input type="tel" id="telefono" name="telefono" required><br><br>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
 
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-        <label for="email">Correo electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
-
-        <input type="submit" value="Enviar mensaje">
-
+      <input type="submit" value="Enviar mensaje">
     </form>
+  </div>
 
-    <script src="style.css" defer></script>
-<footer>
+  <footer>
     <div class="footer-section">
       <p><strong>Autores</strong></p>
       <ul>
