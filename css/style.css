@@ -164,3 +164,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #b30000;
 }
+.seccion .texto_about {
+    width: 60%;
+}
