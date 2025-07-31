@@ -1,62 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PUERTAS AL MISTERIO - Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUERTAS AL MISTERIO - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav>
-        <a href="./index.html">Inicio</a>
-        <a href="./paginas/about.html">Quiénes somos</a>
-        <a href="./paginas/contacto.html">Contacto</a>
-    </nav>
-
-    <div class="content">
-        <h1>Puertas al Misterio</h1>
-
-        <section class="seccion">
-            <div class="texto">
-                <h2>Fenómenos Paranormales</h2>
-                <p>Los fenómenos paranormales han capturado la imaginación humana durante siglos. Desde apariciones fantasmales hasta casas embrujadas, estos eventos nos hacen cuestionar lo que creemos conocer del mundo.</p>
-            </div>
-            <div class="imagen">
-                <img src="https://png.pngtree.com/png-clipart/20231021/original/pngtree-cartoon-ghost-for-halloween-png-image_13395839.png" alt="Fantasma">
-            </div>
-        </section>
-
-        <section class="seccion">
-            <div class="texto">
-                <h2>Ovnis y vida extraterrestre</h2>
-                <p>Avistamientos de objetos voladores no identificados han sido reportados en todo el mundo. ¿Estamos solos en el universo? Las teorías sobre visitas extraterrestres se siguen debatiendo entre creyentes y escépticos.</p>
-            </div>
-            <div class="imagen">
-                <img src="https://abcnoticias.mx/u/fotografias/m/2023/9/13/f1280x720-222771_354446_5050.png" alt="Ovni en el cielo">
-            </div>
-        </section>
-
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Puertas al Misterio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./paginas/about.html">Quiénes somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
     </div>
-  <footer>
-    <div class="footer-section">
-      <p><strong>Autores</strong></p>
-      <ul>
-        <li>Daniel Zamora</li>
-        <li>Jordan Rodriguez</li>
-        <li>Alexandra Lamadrid</li>
-        <li>Sebastian Hernandez</li>
-      </ul>
+  </nav>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <div class="container mt-5 pt-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <h1 class="text-center mb-5">Puertas al Misterio</h1>
+
+        <!-- Sección 1 -->
+        <div class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <h2>Fenómenos Paranormales</h2>
+            <p>
+              Los fenómenos paranormales han capturado la imaginación humana durante siglos. 
+              Desde apariciones fantasmales hasta casas embrujadas, estos eventos nos hacen 
+              cuestionar lo que creemos conocer del mundo.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="https://png.pngtree.com/png-clipart/20231021/original/pngtree-cartoon-ghost-for-halloween-png-image_13395839.png"
+              class="img-fluid rounded shadow" alt="Fantasma" style="max-height: 400px;">
+          </div>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="row align-items-center mb-5 flex-md-row-reverse">
+          <div class="col-md-6">
+            <h2>Ovnis y vida extraterrestre</h2>
+            <p>
+              Avistamientos de objetos voladores no identificados han sido reportados en todo el mundo. 
+              ¿Estamos solos en el universo? Las teorías sobre visitas extraterrestres se siguen debatiendo 
+              entre creyentes y escépticos.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="https://abcnoticias.mx/u/fotografias/m/2023/9/13/f1280x720-222771_354446_5050.png"
+              class="img-fluid rounded shadow" alt="Ovni en el cielo" style="max-height: 400px;">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="footer-section">
-      <p><strong>Contacto:</strong><br> contacto@puertasalmisterio.com</p>
-    </div>
-    <div class="footer-section">
-      <p><strong>Proyecto:</strong><br> Puertas Al Misterio</p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="text-center text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <p><strong>Autores</strong></p>
+          <ul class="list-unstyled">
+            <li>Daniel Zamora</li>
+            <li>Jordan Rodriguez</li>
+            <li>Alexandra Lamadrid</li>
+            <li>Sebastian Hernandez</li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <p><strong>Contacto:</strong><br> contacto@puertasalmisterio.com</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <p><strong>Proyecto:</strong><br> Puertas Al Misterio</p>
+        </div>
+      </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

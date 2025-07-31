@@ -1,130 +1,137 @@
+/* Reset general */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Paleta de colores */
+:root {
+  --gris-claro: #eaeaea;
+  --magenta: #893168;
+  --vino: #4a1942;
+  --violeta: #2e1c2b;
+  --negro: #050404;
+}
+
+/* Estilos generales del body */
 body {
-    
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f3f0;
-    color: #222;
+  background-color: var(--gris-claro);
+  color: var(--negro);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
 }
 
+/* Tipografías personalizadas */
+h1, h2, label, footer {
+  font-family: 'Creepster', cursive;
+}
+
+/* Navbar */
 nav {
-    font-family: 'Creepster', cursive;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #000000;
-    padding: 15px 0;
-    text-align: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  padding: 15px 0;
+  text-align: center;
+  z-index: 1000;
+  font-family: 'Creepster', cursive;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-    font-weight: bold;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 nav a:hover {
-    color: #f0a500;
+  color: #f0a500;
 }
 
+/* Navbar con Bootstrap */
+.navbar-dark {
+  background-color: var(--vino);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--gris-claro);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--magenta);
+}
+
+/* Contenido */
 .content {
-    margin-top: 90px;
-    padding: 20px;
+  margin-top: 90px;
+  padding: 20px;
 }
 
 .seccion {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
 }
 
 .seccion .texto {
-    width: 60%;
+  width: 60%;
+  margin-left: 100px;
 }
 
 .seccion .imagen {
-    width: 40%;
+  width: 40%;
 }
 
 .seccion .imagen img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-
-/*footer {
-    background-color: #111;
-    color: white;
-    text-align: center;
-    padding: 20px 10px;
-    margin-top: 40px;
-} */
-footer {
-    font-size: 18px;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Creepster', cursive;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+/* Secciones tipo card */
+.container-section {
+  padding: 2rem;
+  background-color: var(--violeta);
+  color: var(--gris-claro);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.footer-section {
-  margin: 10px;
-  text-align: center;
+.card-custom {
+  background-color: var(--gris-claro);
+  border-left: 5px solid var(--magenta);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
+/* Botón personalizado */
+.btn-magenta {
+  background-color: var(--magenta);
+  color: white;
+  border: none;
 }
 
-.footer-section li {
-  margin: 5px 0;
+.btn-magenta:hover {
+  background-color: var(--vino);
+  color: white;
 }
 
-footer p {
-  margin: 5px 0;
-}
-h2{
- font-family: 'Creepster', cursive;}
- 
-img {
-    width: 80px;
-    height: 300px;
-}
-.texto{
-    margin-left: 100px;
-}
-h1{
-    font-family: 'Creepster', cursive;
- 
-}
-#hola{
-    margin-left: 150px;
-    margin-top: 50px;
-}
+/* Formulario de contacto */
 #form-contacto {
   max-width: 600px;
   margin: 30px auto;
   background-color: #1c1c1c;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
   border: 2px solid crimson;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
 }
 
 label {
@@ -132,7 +139,6 @@ label {
   margin-bottom: 8px;
   font-weight: bold;
   color: #f0a500;
-  font-family: 'Creepster', cursive;
 }
 
 input[type="text"],
@@ -157,10 +163,65 @@ input[type="submit"] {
   border-radius: 8px;
   cursor: pointer;
   font-size: 18px;
-  font-family: 'Creepster', cursive;
   transition: background 0.3s ease;
 }
 
 input[type="submit"]:hover {
   background-color: #b30000;
 }
+
+form input,
+form textarea {
+  background-color: var(--violeta);
+  border: 1px solid var(--vino);
+  color: var(--gris-claro);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: var(--gris-claro);
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-section {
+  margin: 10px;
+}
+
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin: 5px 0;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Imágenes */
+img {
+  width: 80px;
+  height: 300px;
+}
+
+/* ID personalizado */
+#hola {
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
